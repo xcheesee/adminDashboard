@@ -1,0 +1,54 @@
+:root {
+    --main-color: #06b6d4;
+    --bg-color: white;
+    --bg-color-dark: #a3a3a3;
+    --accent-color: #22c55e;
+}
+
+
+li {
+    list-style: none;
+    float: left;
+}
+
+.container {
+    display: grid;
+    grid-template: max-content max-content 1fr/ 1fr 3fr 1fr;
+}
+
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1;
+}
+
+.nav {
+    grid-column: 2 / -1;
+    grid-row: 2;
+}
+
+.dashboard {
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 3 / -1;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.sidebar {
+    grid-column: -2;
+    grid-row: 3;
+}
+
+.longFlex {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
