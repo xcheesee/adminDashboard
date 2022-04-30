@@ -1,14 +1,31 @@
 :root {
-    --main-color: #06b6d4;
+    --main-color: #2563eb;
     --bg-color: white;
-    --bg-color-dark: #f1f5f9;
+    --bg-color-dark: #e2e8f0;
     --accent-color: #22c55e;
+    --text-secondary: #94a3b8
 }
 
 * {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+#searchBar {
+    border-radius: 50px;
+    border: none;
+    background-color: var(--bg-color-dark);
+    font-size: 32px;
+    padding: 0 0.5em;
+    width: 30ch;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 li {
@@ -25,12 +42,21 @@ li {
 .header {
     grid-column: 2 / -1;
     grid-row: 1;
+    padding-top: 1em;
+    margin-bottom: 1em;
 }
 
 .nav {
     grid-column: 2 / -1;
     grid-row: 2;
     z-index: 1;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.header, .nav {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .dashboard {
@@ -72,15 +98,13 @@ li {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-rows: 1fr;
     gap: 20px;
     height: calc(100% - 16px);
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
     grid-column: 2;
 }
 
@@ -92,6 +116,7 @@ li {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .nav,  .cell{
@@ -101,5 +126,34 @@ li {
 .cell {
     background-color: var(--bg-color);
     border-radius: 5px;
-    border-left: 3px solid var(--accent-color);
+    border-left: 5px solid var(--accent-color);
+    padding: 16px;
+}
+
+.headerButton {
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: .5em 1em;
+}
+
+.description {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard > * {
+    gap: 0.5em;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: Bold;
+    text-transform: capitalize;
 }

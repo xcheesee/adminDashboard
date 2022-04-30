@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Cool Dashboard</title>
 </head>
 <body>
     <div class="container">
         <div class="header longFlex">
-            <input type="text" name="" id="">
+            <input type="text" name="" id="searchBar">
             <p>Morgan</p>
         </div>
         <div class="nav longFlex">
@@ -20,23 +23,35 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><button>new</button></li>
-                    <li><button>upload</button></li>
-                    <li><button>share</button></li>
+                    <li><button class="headerButton">new</button></li>
+                    <li><button class="headerButton">upload</button></li>
+                    <li><button class="headerButton">share</button></li>
                 </ul>
             </div>
         </div>
         <div class="dashboard">
             <p>Dashboard</p>
-            <div class="tabs">
-                <p>tab</p>
-                <p>tab</p>
-                <p>tab</p>
-                <p>tab</p>
-                <p>tab</p>
-                <p>tab</p>
+            <div class="tabs flexColumn">
+                <div class="tabItem">
+                    <p>tab</p>
+                </div>
+                <div class="tabItem">
+                    <p>tab</p>
+                </div>
+                <div class="tabItem">
+                    <p>tab</p>
+                </div>
+                <div class="tabItem">
+                    <p>tab</p>
+                </div>
+                <div class="tabItem">
+                    <p>tab</p>
+                </div>
+                <div class="tabItem">
+                    <p>tab</p>
+                </div>
             </div>
-            <div class="config">
+            <div class="config flexColumn">
                 <p>setting</p>
                 <p>setting</p>
                 <p>setting</p>
@@ -47,32 +62,32 @@
                 <p>Projects</p>
                 <div class="projects">
                     <div class="cell">
-                        <p>title</p>
-                        <p>description</p>
+                        <p class="title">title</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quaerat dolorum, quo nisi officiis, omnis laboriosam similique, quos labore deserunt atque libero praesentium? Laborum, labore?</p>
                     </div>
                     <div class="cell">
-                        <p>title</p>
-                        <p>description</p>
+                        <p class="title">title</p>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsam optio tenetur assumenda fugiat odio alias, accusamus praesentium inventore distinctio quos unde magni, obcaecati molestiae?</p>
                     </div>
                     <div class="cell">
-                        <p>title</p>
-                        <p>description</p>
+                        <p class="title">title</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque quam? Suscipit maiores ratione laudantium, soluta aliquid, optio totam consequuntur harum voluptas qui ut facilis.</p>
                     </div>
                     <div class="cell">
-                        <p>title</p>
-                        <p>description</p>
+                        <p class="title">title</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, odio sunt maiores doloremque velit. Aperiam molestiae, iure eos nisi fugiat provident deleniti veritatis doloribus!</p>
                     </div>
                     <div class="cell">
-                        <p>title</p>
-                        <p>description</p>
+                        <p class="title">title</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repudiandae ipsum doloremque tenetur voluptas modi quaerat excepturi. Quas voluptatem nesciunt veritatis maiores labore, blanditiis deserunt.</p>
                     </div>
                     <div class="cell">
-                        <p>title</p>
-                        <p>description</p>
+                        <p class="title">title</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda necessitatibus culpa fuga atque nesciunt, dolorum deserunt illum modi animi tenetur, consequatur adipisci, quasi amet?</p>
                     </div>
                 </div>
             </div>
-            <div class="sidebar">
+            <div class="sidebar flexColumn">
                 <p>annoucments</p>
                 <div class="cell">
                     <p>title</p>
