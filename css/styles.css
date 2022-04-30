@@ -20,6 +20,13 @@
     font-size: 32px;
     padding: 0 0.5em;
     width: min(40ch, 100%);
+    box-sizing: border-box;
+}
+
+#searchBar:focus-visible{
+    border: 3px solid var(--main-color) !important;
+    box-sizing: border-box;
+    outline: none;
 }
 
 ul {
@@ -151,6 +158,7 @@ li {
     padding: .5em 1em;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 24px;
 }
 
 .description {
@@ -177,6 +185,7 @@ li {
     display: flex;
     gap: 1em;
     align-items: center;
+    flex: 1;
 }
 
 .dashIcon {
@@ -227,4 +236,8 @@ img {
 
 .greet, .account {
     gap:1em
+}
+
+#bell {
+    padding-right: 2em;
 }
