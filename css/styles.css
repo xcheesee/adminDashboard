@@ -188,8 +188,10 @@ li {
 }
 
 .actions {
+    display: flex;
     align-self: flex-end;
     margin-top: auto;
+    gap: 1em;
 }
 
 .greet , .account{
