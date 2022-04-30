@@ -238,6 +238,11 @@ img {
     gap:1em
 }
 
+.config {
+    margin-top: auto;
+    margin-bottom: 2em;
+}
+
 #bell {
     padding-right: 2em;
 }
