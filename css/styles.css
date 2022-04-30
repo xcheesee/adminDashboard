@@ -1,7 +1,7 @@
 :root {
     --main-color: #06b6d4;
     --bg-color: white;
-    --bg-color-dark: #a3a3a3;
+    --bg-color-dark: #f1f5f9;
     --accent-color: #22c55e;
 }
 
@@ -10,7 +10,6 @@
     padding: 0;
     font-size: 16px;
 }
-
 
 li {
     list-style: none;
@@ -31,6 +30,7 @@ li {
 .nav {
     grid-column: 2 / -1;
     grid-row: 2;
+    z-index: 1;
 }
 
 .dashboard {
@@ -55,7 +55,6 @@ li {
 .content {
     grid-column: 2;
     grid-row: 3 / -1;
-    height: 100%;
 }
 
 .projects {
@@ -65,8 +64,14 @@ li {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     grid-column: -2;
     grid-row: 3;
+}
+
+.sidebar .cell {
+    flex: 1 1 100%;
 }
 
 .longFlex {
@@ -87,4 +92,5 @@ li {
 
 .content , .sidebar {
     background-color: var(--bg-color-dark);
+    padding: 1em 1em 1em;
 }
