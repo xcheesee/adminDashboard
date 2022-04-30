@@ -19,7 +19,7 @@
     background-color: var(--bg-color-dark);
     font-size: 32px;
     padding: 0 0.5em;
-    width: 30ch;
+    width: min(40ch, 100%);
 }
 
 ul {
@@ -35,7 +35,7 @@ li {
 
 .container {
     display: grid;
-    grid-template: max-content max-content 1fr/ 1fr 3fr 1fr;
+    grid-template: max-content max-content 1fr/ max-content 3fr 1fr;
     min-height: 100vh;
 }
 
@@ -62,8 +62,8 @@ li {
 .dashboard {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 1em 0 0 1em;
+    gap: 50px;
+    padding: 1em 3em 0 1em;
     grid-column: 1;
     grid-row: 1 / -1;
     background-color: var(--main-color);
@@ -73,13 +73,23 @@ li {
     color: var(--bg-color);
 }
 
-.dashboard *, .nav  p {
-    font-size: 16px;
+.dashboard *{
     font-weight: bold;
 }
 
-#name {
+.title {
     font-size: 32px;
+    font-weight: Bold;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: 26px;
+}
+
+#mainTitle {
+    font-size: 56px;
+    font-weight: bold;
 }
 
 .mainArea {
@@ -101,7 +111,7 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-rows: 1fr;
     gap: 20px;
-    height: calc(100% - 16px);
+    height: calc(100% - 3em);
 }
 
 .sidebar {
@@ -136,6 +146,8 @@ li {
     background-color: var(--main-color);
     color: var(--bg-color);
     padding: .5em 1em;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 .description {
@@ -148,12 +160,31 @@ li {
     flex-direction: column;
 }
 
-.dashboard > * {
-    gap: 0.5em;
+.dashboard > *{
+    gap: 1em;
 }
 
-.title {
-    font-size: 32px;
-    font-weight: Bold;
-    text-transform: capitalize;
+.tabItem {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.searchArea {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.dashIcon {
+    width: 100%;
+}
+
+.handle::before {
+    content: "@";
+}
+
+.actions {
+    align-self: flex-end;
+    margin-top: auto;
 }
