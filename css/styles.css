@@ -120,6 +120,8 @@ li {
 
 .sidebar .cell {
     flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .longFlex {
@@ -198,4 +200,15 @@ img {
     flex: 1 0 0%;
     border-radius: 50%;
     border: 4px solid var(--accent-color);
+}
+
+.sidebarArticle {
+    padding-bottom: 1em;
+    flex: 1 1 100%;
+}
+
+.sidebarArticle + .sidebarArticle {
+    border-top: 1px solid var(--bg-color-dark);
+
+    padding-top: 1em;
 }
